@@ -24,7 +24,6 @@ export default function MainContent() {
           {/* Prayers Cards */}
           <Stack>
               <Prayer/>
-            
           </Stack>
     </>
   );
