@@ -1,0 +1,33 @@
+html {
+  direction: rtl;
+}
+
+.app {
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-contianer {
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  flex-wrap: ;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.card {
+  gap: 20px;
+  flex: 20%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(248, 245, 245, 0.5);
+
+}

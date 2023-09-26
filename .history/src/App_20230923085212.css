@@ -1,0 +1,20 @@
+html {
+  direction: rtl;
+}
+
+.app {
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-contianer {
+  width: 100vw;
+}
+
+.card{
+  
+}

@@ -1,0 +1,45 @@
+html {
+  direction: rtl;
+}
+
+.app {
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-contianer {
+  width: 100vw;
+}
+
+.middle-stack {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.card {
+  flex: 1 1 auto;
+}
+
+.bottom-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+
+}
+
+.city-select {
+  width: 20%;
+  min-width: ;
+  border: 1px solid white;
+  border-radius: 10px;
+  
+}
