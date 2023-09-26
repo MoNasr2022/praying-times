@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contianer {
+  padding: 50px 0;
+  width: 100vw;
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-image: url(https://images.pexels.com/photos/18274181/pexels-photo-18274181/free-photo-of-crowd-around-kaaba-in-mecca-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) ;
+}
+
+.middle-stack {
+  display: flex;
+  flex-flow: wrap;
+
+  gap: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.card {
+  flex: 1 1 auto;
+  flex-grow: unset;
+}
+
+.bottom-stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.city-select {
+  width: 20%;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+
+}
+
+.MuiSvgIcon-root {
+  color: white !important;
+}
+
+.MuiInputBase-root {
+  color: white !important;
+}
+
+.MuiFormLabel-root {
+  color: white !important;
+}

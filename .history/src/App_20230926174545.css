@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+html {
+  direction: rtl;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.app {
+ background: #cccc;
+  background-size: cover;
+  ;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.contianer {
+  padding: 50px 0;
+  width: 100%;
+  /* background: #171616; */
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+
+.middle-stack {
+  display: flex;
+  flex-direction: row !important;
+  gap: 20px;
+  margin-top: 50px;
+  padding: 0 20px;
+}
+
+.card {
+  flex: 1 1 auto;
+  flex-grow: unset;
+  background: transparent;
+}
+
+.bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+.city-select {
+  width: 20%;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: white !important;
+
+}
+
+.MuiSvgIcon-root {
+  color: white !important;
+}
+
+.MuiInputBase-root {
+  color: white !important;
+}
+
+.MuiFormLabel-root {
+  color: white !important;
+}

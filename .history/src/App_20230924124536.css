@@ -1,0 +1,31 @@
+html {
+  direction: rtl;
+}
+
+.app {
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-contianer {
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.card {
+  flex: 1 1 auto;
+}
+
+city-select

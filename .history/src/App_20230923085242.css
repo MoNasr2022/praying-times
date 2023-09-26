@@ -1,0 +1,23 @@
+html {
+  direction: rtl;
+}
+
+.app {
+  background: #171616;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-contianer {
+  width: 100vw;
+}
+
+.card{
+
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
