@@ -8,7 +8,7 @@ export const cities = [
   { id: 7, name: "Los Angeles" },
   { id: 8, name: "San Francisco" },
   { id: 9, name: "Houston" },
-  { id: 10, name: "Raleigh" },
+  { id: 10, name: "Ral" },
 ];
 export const images = {
   Fajr: "https://wepik.com/api/image/ai/9a07baa7-b49b-4f6b-99fb-2d2b908800c2",
