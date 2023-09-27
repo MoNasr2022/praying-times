@@ -41,7 +41,6 @@ export default function MainContent() {
   };
   useEffect(() => {
     setLoading(true);
-    
     getTimings();
   }, [selectedCity]);
 

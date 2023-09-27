@@ -10,10 +10,9 @@ import {cities} from "../data"
 import { Divider } from "@mui/material";
 import CountDownTimer from "./CountDownTimer";
 import { images } from "../data";
-import Loading from "./loader/Loading";
-
+im
 export default function MainContent() {
-  const [loading, setLoading] =useState(true)
+  const [loading, setLoading] =useState(false)
   const [timings, setTimings] = useState({
     Fajr: "",
     Dhuhr: "",
@@ -25,7 +24,6 @@ export default function MainContent() {
     const availableCities = cities
     
   const getTimings = async () => {
-    
     const res = await axios.get(
       `https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=USA}`
     );
@@ -37,11 +35,8 @@ export default function MainContent() {
       Maghrib: resPrayes.timings.Maghrib,
       Isha: resPrayes.timings.Isha,
     });
-    setLoading(false)
   };
   useEffect(() => {
-    setLoading(true);
-    
     getTimings();
   }, [selectedCity]);
 
@@ -50,11 +45,11 @@ export default function MainContent() {
     setselectedCity(e.target.value);
   };
 
-  if (loading) {
-    return <Loading />;
-  } else
   return (
-    <>
+    
+    {
+      {loading ? <loading /> : null}
+  <>
   {/* Top Row */}
   <section className="top-section">
   <CountDownTimer timings={timings} city={selectedCity} />
@@ -98,5 +93,6 @@ export default function MainContent() {
             </FormControl>
             </section>
             </>
+          }
             );
 }

@@ -37,11 +37,10 @@ export default function MainContent() {
       Maghrib: resPrayes.timings.Maghrib,
       Isha: resPrayes.timings.Isha,
     });
-    setLoading(false)
+    setLoading
   };
   useEffect(() => {
     setLoading(true);
-    
     getTimings();
   }, [selectedCity]);
 

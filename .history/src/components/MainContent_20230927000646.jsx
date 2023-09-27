@@ -36,12 +36,11 @@ export default function MainContent() {
       Asr: resPrayes.timings.Asr,
       Maghrib: resPrayes.timings.Maghrib,
       Isha: resPrayes.timings.Isha,
-    });
-    setLoading(false)
+    };
+    
   };
   useEffect(() => {
     setLoading(true);
-    
     getTimings();
   }, [selectedCity]);
 

@@ -10,10 +10,9 @@ import {cities} from "../data"
 import { Divider } from "@mui/material";
 import CountDownTimer from "./CountDownTimer";
 import { images } from "../data";
-import Loading from "./loader/Loading";
 
 export default function MainContent() {
-  const [loading, setLoading] =useState(true)
+  const [loading]
   const [timings, setTimings] = useState({
     Fajr: "",
     Dhuhr: "",
@@ -25,7 +24,6 @@ export default function MainContent() {
     const availableCities = cities
     
   const getTimings = async () => {
-    
     const res = await axios.get(
       `https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=USA}`
     );
@@ -37,11 +35,8 @@ export default function MainContent() {
       Maghrib: resPrayes.timings.Maghrib,
       Isha: resPrayes.timings.Isha,
     });
-    setLoading(false)
   };
   useEffect(() => {
-    setLoading(true);
-    
     getTimings();
   }, [selectedCity]);
 
@@ -50,17 +45,14 @@ export default function MainContent() {
     setselectedCity(e.target.value);
   };
 
-  if (loading) {
-    return <Loading />;
-  } else
   return (
     <>
-  {/* Top Row */}
-  <section className="top-section">
-  <CountDownTimer timings={timings} city={selectedCity} />
+      {/* Top Row */}
+      <section className="top-section">
+        <CountDownTimer timings={timings} city={selectedCity} />
       </section>
       <Divider
-      style={{ borderColor: "white", opacity: "0.1", margin: "40px", }}
+        style={{ borderColor: "white", opacity: "0.1", margin: "40px", }}
       />
       {/* Prayers Cards */}
       <section
@@ -80,7 +72,7 @@ export default function MainContent() {
       {/* Bottom Row */}
       <section className="bottom-section">
         <FormControl className="city-select">
-        <InputLabel id="demo-simple-select-label">City</InputLabel>
+          <InputLabel id="demo-simple-select-label">City</InputLabel>
           <Select
             labelId="demo-simple-select-label"
             id="demo-simple-select"
@@ -88,15 +80,15 @@ export default function MainContent() {
             value={selectedCity}
             label="Age"
             onChange={handleCityChange}
-            >
+          >
             {availableCities.map((city) => (
               <MenuItem key={city.id} value={city.name}>
                 {city.name}
               </MenuItem>
             ))}
-            </Select>
-            </FormControl>
-            </section>
-            </>
-            );
+          </Select>
+        </FormControl>
+      </section>
+    </>
+  );
 }

@@ -25,7 +25,6 @@ export default function MainContent() {
     const availableCities = cities
     
   const getTimings = async () => {
-    
     const res = await axios.get(
       `https://api.aladhan.com/v1/timingsByCity?city=${selectedCity}&country=USA}`
     );
@@ -37,11 +36,9 @@ export default function MainContent() {
       Maghrib: resPrayes.timings.Maghrib,
       Isha: resPrayes.timings.Isha,
     });
-    setLoading(false)
   };
   useEffect(() => {
-    setLoading(true);
-    
+    setLoading()
     getTimings();
   }, [selectedCity]);
 
