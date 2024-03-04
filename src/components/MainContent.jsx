@@ -21,7 +21,7 @@ export default function MainContent() {
     Maghrib: "",
     Isha: "",
   });
-  const [selectedCity, setselectedCity] = useState("Marion.VA");
+  const [selectedCity, setselectedCity] = useState("Marion,VA");
     const availableCities = cities
     
   const getTimings = async () => {
