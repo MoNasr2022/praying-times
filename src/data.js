@@ -1,6 +1,6 @@
 export const cities = [
   { id: 1, name: "Abingdon,VA"},
-  { id: 2, name: "Marion.VA" },
+  { id: 2, name: "Marion,VA" },
   { id: 3, name: "Charleston" },
   { id: 4, name: "New York" },
   { id: 5, name: "Washington" },
