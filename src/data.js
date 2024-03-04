@@ -1,6 +1,6 @@
 export const cities = [
-  { id: 1, name: "Fort Mill" },
-  { id: 2, name: "Charlotte.NC" },
+  { id: 1, name: "Abingdon,VA"},
+  { id: 2, name: "Marion.VA" },
   { id: 3, name: "Charleston" },
   { id: 4, name: "New York" },
   { id: 5, name: "Washington" },
@@ -9,6 +9,8 @@ export const cities = [
   { id: 8, name: "San Francisco" },
   { id: 9, name: "Houston" },
   { id: 10, name: "Raleigh" },
+  { id: 11, name: "Fort Mill" },
+  { id: 12, name: "Charlotte.NC" },
 ];
 export const images = {
   Fajr: "https://wepik.com/api/image/ai/9a07baa7-b49b-4f6b-99fb-2d2b908800c2",
